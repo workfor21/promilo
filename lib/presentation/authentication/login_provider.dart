@@ -62,6 +62,7 @@ class LoginProvider extends ChangeNotifier {
       // save the access_token from response in SharedPreferences
 
       //
+      showSnackBar(context, "Log in successful!");
       isLoading = false;
       notifyListeners();
       Navigator.pushNamedAndRemoveUntil(
